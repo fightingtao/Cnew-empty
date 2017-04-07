@@ -1,0 +1,869 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E0A42C4EDC7C5EC3ACC7FF7 /* Pods_chuYan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF078EBDAF9F5CA3603AB3FB /* Pods_chuYan.framework */; };
+		FFCDFBF61E0004F70009D1FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCDFBF51E0004F70009D1FF /* main.m */; };
+		FFCDFBF91E0004F70009D1FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCDFBF81E0004F70009D1FF /* AppDelegate.m */; };
+		FFCDFBFC1E0004F70009D1FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCDFBFB1E0004F70009D1FF /* ViewController.m */; };
+		FFCDFBFF1E0004F70009D1FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFCDFBFD1E0004F70009D1FF /* Main.storyboard */; };
+		FFCDFC021E0004F70009D1FF /* chuYan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFCDFC001E0004F70009D1FF /* chuYan.xcdatamodeld */; };
+		FFCDFC041E0004F70009D1FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFCDFC031E0004F70009D1FF /* Assets.xcassets */; };
+		FFCDFC071E0004F70009D1FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFCDFC051E0004F70009D1FF /* LaunchScreen.storyboard */; };
+		FFCDFC121E0004F70009D1FF /* chuYanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCDFC111E0004F70009D1FF /* chuYanTests.m */; };
+		FFCDFC1D1E0004F70009D1FF /* chuYanUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCDFC1C1E0004F70009D1FF /* chuYanUITests.m */; };
+		FFCDFC591E00D90B0009D1FF /* ALBBFullSecurityGuard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDFC4F1E00D90B0009D1FF /* ALBBFullSecurityGuard.framework */; };
+		FFCDFC5A1E00D90B0009D1FF /* ALBBMediaService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDFC501E00D90B0009D1FF /* ALBBMediaService.framework */; };
+		FFCDFC5B1E00D90B0009D1FF /* ALBBSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDFC511E00D90B0009D1FF /* ALBBSDK.framework */; };
+		FFCDFC5C1E00D90B0009D1FF /* baichuan.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FFCDFC521E00D90B0009D1FF /* baichuan.bundle */; };
+		FFCDFC5D1E00D90B0009D1FF /* SecurityGuardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDFC531E00D90B0009D1FF /* SecurityGuardSDK.framework */; };
+		FFCDFC5E1E00D90B0009D1FF /* SGMain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDFC541E00D90B0009D1FF /* SGMain.framework */; };
+		FFCDFC5F1E00D90B0009D1FF /* UTDID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDFC551E00D90B0009D1FF /* UTDID.framework */; };
+		FFCDFC601E00D90B0009D1FF /* UTMini.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDFC561E00D90B0009D1FF /* UTMini.framework */; };
+		FFCDFC611E00D90B0009D1FF /* yw_1222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FFCDFC571E00D90B0009D1FF /* yw_1222.jpg */; };
+		FFCDFC621E00D90B0009D1FF /* ZipArchive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDFC581E00D90B0009D1FF /* ZipArchive.framework */; };
+		FFCDFC641E00DC440009D1FF /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDFC631E00DC430009D1FF /* CoreFoundation.framework */; };
+		FFCDFC661E00DC520009D1FF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDFC651E00DC520009D1FF /* libz.tbd */; };
+		FFCDFC681E00DC5C0009D1FF /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDFC671E00DC5C0009D1FF /* ImageIO.framework */; };
+		FFCDFC6A1E00DC630009D1FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDFC691E00DC630009D1FF /* CoreGraphics.framework */; };
+		FFCDFC6C1E00DC6A0009D1FF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDFC6B1E00DC6A0009D1FF /* CFNetwork.framework */; };
+		FFCDFC6E1E00DC720009D1FF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDFC6D1E00DC720009D1FF /* MobileCoreServices.framework */; };
+		FFCDFC701E00DC780009D1FF /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDFC6F1E00DC780009D1FF /* AssetsLibrary.framework */; };
+		FFCDFC721E00DC800009D1FF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDFC711E00DC800009D1FF /* CoreData.framework */; };
+		FFCDFC741E00DC860009D1FF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDFC731E00DC860009D1FF /* Security.framework */; };
+		FFCDFC761E00DC8E0009D1FF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDFC751E00DC8E0009D1FF /* SystemConfiguration.framework */; };
+		FFCDFC781E00DC960009D1FF /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDFC771E00DC960009D1FF /* CoreTelephony.framework */; };
+		FFCDFC7A1E00DC9C0009D1FF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDFC791E00DC9C0009D1FF /* CoreLocation.framework */; };
+		FFCDFC7C1E00DCA60009D1FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDFC7B1E00DCA60009D1FF /* UIKit.framework */; };
+		FFCDFC7E1E00DCAF0009D1FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDFC7D1E00DCAF0009D1FF /* Foundation.framework */; };
+		FFCDFC801E00DEC40009D1FF /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCDFC7F1E00DEC40009D1FF /* CoreMotion.framework */; };
+		FFCDFC861E00E38A0009D1FF /* HomeVController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCDFC851E00E38A0009D1FF /* HomeVController.m */; };
+		FFCDFCA91E00E9DE0009D1FF /* communcat.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCDFC8A1E00E9DE0009D1FF /* communcat.m */; };
+		FFCDFCB41E00E9DE0009D1FF /* NetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCDFCA61E00E9DE0009D1FF /* NetModel.m */; };
+		FFCDFCB51E00E9DE0009D1FF /* UserInfoSaveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCDFCA81E00E9DE0009D1FF /* UserInfoSaveModel.m */; };
+		FFCDFCC21E00F8560009D1FF /* BaiDuMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCDFCBF1E00F8560009D1FF /* BaiDuMapManager.m */; };
+		FFCDFCC31E00F8560009D1FF /* MapRoaldVController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FFCDFCC11E00F8560009D1FF /* MapRoaldVController.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFCDFC0E1E0004F70009D1FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFCDFBE91E0004F70009D1FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFCDFBF01E0004F70009D1FF;
+			remoteInfo = chuYan;
+		};
+		FFCDFC191E0004F70009D1FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFCDFBE91E0004F70009D1FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFCDFBF01E0004F70009D1FF;
+			remoteInfo = chuYan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B4E1A254304F683BAF6110E /* Pods-chuYan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chuYan.release.xcconfig"; path = "Pods/Target Support Files/Pods-chuYan/Pods-chuYan.release.xcconfig"; sourceTree = "<group>"; };
+		DE66D93AE27AFCC21327CE6B /* Pods-chuYan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chuYan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chuYan/Pods-chuYan.debug.xcconfig"; sourceTree = "<group>"; };
+		EF078EBDAF9F5CA3603AB3FB /* Pods_chuYan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chuYan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFCDFBF11E0004F70009D1FF /* chuYan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chuYan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFCDFBF51E0004F70009D1FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFCDFBF71E0004F70009D1FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FFCDFBF81E0004F70009D1FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FFCDFBFA1E0004F70009D1FF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FFCDFBFB1E0004F70009D1FF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FFCDFBFE1E0004F70009D1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFCDFC011E0004F70009D1FF /* chuYan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = chuYan.xcdatamodel; sourceTree = "<group>"; };
+		FFCDFC031E0004F70009D1FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFCDFC061E0004F70009D1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFCDFC081E0004F70009D1FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFCDFC0D1E0004F70009D1FF /* chuYanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chuYanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFCDFC111E0004F70009D1FF /* chuYanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chuYanTests.m; sourceTree = "<group>"; };
+		FFCDFC131E0004F70009D1FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFCDFC181E0004F70009D1FF /* chuYanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chuYanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFCDFC1C1E0004F70009D1FF /* chuYanUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chuYanUITests.m; sourceTree = "<group>"; };
+		FFCDFC1E1E0004F70009D1FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFCDFC4F1E00D90B0009D1FF /* ALBBFullSecurityGuard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ALBBFullSecurityGuard.framework; sourceTree = "<group>"; };
+		FFCDFC501E00D90B0009D1FF /* ALBBMediaService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ALBBMediaService.framework; sourceTree = "<group>"; };
+		FFCDFC511E00D90B0009D1FF /* ALBBSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ALBBSDK.framework; sourceTree = "<group>"; };
+		FFCDFC521E00D90B0009D1FF /* baichuan.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = baichuan.bundle; sourceTree = "<group>"; };
+		FFCDFC531E00D90B0009D1FF /* SecurityGuardSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SecurityGuardSDK.framework; sourceTree = "<group>"; };
+		FFCDFC541E00D90B0009D1FF /* SGMain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SGMain.framework; sourceTree = "<group>"; };
+		FFCDFC551E00D90B0009D1FF /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UTDID.framework; sourceTree = "<group>"; };
+		FFCDFC561E00D90B0009D1FF /* UTMini.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UTMini.framework; sourceTree = "<group>"; };
+		FFCDFC571E00D90B0009D1FF /* yw_1222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yw_1222.jpg; sourceTree = "<group>"; };
+		FFCDFC581E00D90B0009D1FF /* ZipArchive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZipArchive.framework; sourceTree = "<group>"; };
+		FFCDFC631E00DC430009D1FF /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		FFCDFC651E00DC520009D1FF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		FFCDFC671E00DC5C0009D1FF /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		FFCDFC691E00DC630009D1FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FFCDFC6B1E00DC6A0009D1FF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FFCDFC6D1E00DC720009D1FF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FFCDFC6F1E00DC780009D1FF /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		FFCDFC711E00DC800009D1FF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FFCDFC731E00DC860009D1FF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FFCDFC751E00DC8E0009D1FF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FFCDFC771E00DC960009D1FF /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		FFCDFC791E00DC9C0009D1FF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FFCDFC7B1E00DCA60009D1FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FFCDFC7D1E00DCAF0009D1FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FFCDFC7F1E00DEC40009D1FF /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		FFCDFC811E00E0C00009D1FF /* chuYan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "chuYan-Bridging-Header.h"; sourceTree = "<group>"; };
+		FFCDFC841E00E38A0009D1FF /* HomeVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVController.h; sourceTree = "<group>"; };
+		FFCDFC851E00E38A0009D1FF /* HomeVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVController.m; sourceTree = "<group>"; };
+		FFCDFC891E00E9DE0009D1FF /* communcat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = communcat.h; sourceTree = "<group>"; };
+		FFCDFC8A1E00E9DE0009D1FF /* communcat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = communcat.m; sourceTree = "<group>"; };
+		FFCDFCA51E00E9DE0009D1FF /* NetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetModel.h; sourceTree = "<group>"; };
+		FFCDFCA61E00E9DE0009D1FF /* NetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetModel.m; sourceTree = "<group>"; };
+		FFCDFCA71E00E9DE0009D1FF /* UserInfoSaveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoSaveModel.h; sourceTree = "<group>"; };
+		FFCDFCA81E00E9DE0009D1FF /* UserInfoSaveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoSaveModel.m; sourceTree = "<group>"; };
+		FFCDFCB61E00EC110009D1FF /* publicResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = publicResource.h; path = chuYan/publicResource.h; sourceTree = "<group>"; };
+		FFCDFCBE1E00F8560009D1FF /* BaiDuMapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiDuMapManager.h; sourceTree = "<group>"; };
+		FFCDFCBF1E00F8560009D1FF /* BaiDuMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiDuMapManager.m; sourceTree = "<group>"; };
+		FFCDFCC01E00F8560009D1FF /* MapRoaldVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapRoaldVController.h; sourceTree = "<group>"; };
+		FFCDFCC11E00F8560009D1FF /* MapRoaldVController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MapRoaldVController.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFCDFBEE1E0004F70009D1FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCDFC801E00DEC40009D1FF /* CoreMotion.framework in Frameworks */,
+				FFCDFC7E1E00DCAF0009D1FF /* Foundation.framework in Frameworks */,
+				FFCDFC7C1E00DCA60009D1FF /* UIKit.framework in Frameworks */,
+				FFCDFC7A1E00DC9C0009D1FF /* CoreLocation.framework in Frameworks */,
+				FFCDFC781E00DC960009D1FF /* CoreTelephony.framework in Frameworks */,
+				FFCDFC761E00DC8E0009D1FF /* SystemConfiguration.framework in Frameworks */,
+				FFCDFC741E00DC860009D1FF /* Security.framework in Frameworks */,
+				FFCDFC721E00DC800009D1FF /* CoreData.framework in Frameworks */,
+				FFCDFC701E00DC780009D1FF /* AssetsLibrary.framework in Frameworks */,
+				FFCDFC6E1E00DC720009D1FF /* MobileCoreServices.framework in Frameworks */,
+				FFCDFC6C1E00DC6A0009D1FF /* CFNetwork.framework in Frameworks */,
+				FFCDFC6A1E00DC630009D1FF /* CoreGraphics.framework in Frameworks */,
+				FFCDFC681E00DC5C0009D1FF /* ImageIO.framework in Frameworks */,
+				FFCDFC661E00DC520009D1FF /* libz.tbd in Frameworks */,
+				FFCDFC641E00DC440009D1FF /* CoreFoundation.framework in Frameworks */,
+				FFCDFC621E00D90B0009D1FF /* ZipArchive.framework in Frameworks */,
+				FFCDFC5B1E00D90B0009D1FF /* ALBBSDK.framework in Frameworks */,
+				FFCDFC5A1E00D90B0009D1FF /* ALBBMediaService.framework in Frameworks */,
+				FFCDFC601E00D90B0009D1FF /* UTMini.framework in Frameworks */,
+				FFCDFC591E00D90B0009D1FF /* ALBBFullSecurityGuard.framework in Frameworks */,
+				FFCDFC5E1E00D90B0009D1FF /* SGMain.framework in Frameworks */,
+				4E0A42C4EDC7C5EC3ACC7FF7 /* Pods_chuYan.framework in Frameworks */,
+				FFCDFC5F1E00D90B0009D1FF /* UTDID.framework in Frameworks */,
+				FFCDFC5D1E00D90B0009D1FF /* SecurityGuardSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFCDFC0A1E0004F70009D1FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFCDFC151E0004F70009D1FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E0AB27163474AFF36639AFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE66D93AE27AFCC21327CE6B /* Pods-chuYan.debug.xcconfig */,
+				5B4E1A254304F683BAF6110E /* Pods-chuYan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8EB934575D1F498E29A13BDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFCDFC7F1E00DEC40009D1FF /* CoreMotion.framework */,
+				FFCDFC7D1E00DCAF0009D1FF /* Foundation.framework */,
+				FFCDFC7B1E00DCA60009D1FF /* UIKit.framework */,
+				FFCDFC791E00DC9C0009D1FF /* CoreLocation.framework */,
+				FFCDFC771E00DC960009D1FF /* CoreTelephony.framework */,
+				FFCDFC751E00DC8E0009D1FF /* SystemConfiguration.framework */,
+				FFCDFC731E00DC860009D1FF /* Security.framework */,
+				FFCDFC711E00DC800009D1FF /* CoreData.framework */,
+				FFCDFC6F1E00DC780009D1FF /* AssetsLibrary.framework */,
+				FFCDFC6D1E00DC720009D1FF /* MobileCoreServices.framework */,
+				FFCDFC6B1E00DC6A0009D1FF /* CFNetwork.framework */,
+				FFCDFC691E00DC630009D1FF /* CoreGraphics.framework */,
+				FFCDFC671E00DC5C0009D1FF /* ImageIO.framework */,
+				FFCDFC651E00DC520009D1FF /* libz.tbd */,
+				FFCDFC631E00DC430009D1FF /* CoreFoundation.framework */,
+				EF078EBDAF9F5CA3603AB3FB /* Pods_chuYan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFCDFBE81E0004F70009D1FF = {
+			isa = PBXGroup;
+			children = (
+				FFCDFCB61E00EC110009D1FF /* publicResource.h */,
+				FFCDFBF31E0004F70009D1FF /* chuYan */,
+				FFCDFC101E0004F70009D1FF /* chuYanTests */,
+				FFCDFC1B1E0004F70009D1FF /* chuYanUITests */,
+				FFCDFBF21E0004F70009D1FF /* Products */,
+				5E0AB27163474AFF36639AFB /* Pods */,
+				8EB934575D1F498E29A13BDF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FFCDFBF21E0004F70009D1FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFCDFBF11E0004F70009D1FF /* chuYan.app */,
+				FFCDFC0D1E0004F70009D1FF /* chuYanTests.xctest */,
+				FFCDFC181E0004F70009D1FF /* chuYanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFCDFBF31E0004F70009D1FF /* chuYan */ = {
+			isa = PBXGroup;
+			children = (
+				FFCDFCBD1E00F8560009D1FF /* BaiDuMap */,
+				FFCDFC881E00E9DE0009D1FF /* Communcation */,
+				FFCDFBF71E0004F70009D1FF /* AppDelegate.h */,
+				FFCDFBF81E0004F70009D1FF /* AppDelegate.m */,
+				FFCDFBFA1E0004F70009D1FF /* ViewController.h */,
+				FFCDFBFB1E0004F70009D1FF /* ViewController.m */,
+				FFCDFC841E00E38A0009D1FF /* HomeVController.h */,
+				FFCDFC851E00E38A0009D1FF /* HomeVController.m */,
+				FFCDFBFD1E0004F70009D1FF /* Main.storyboard */,
+				FFCDFC031E0004F70009D1FF /* Assets.xcassets */,
+				FFCDFC051E0004F70009D1FF /* LaunchScreen.storyboard */,
+				FFCDFC081E0004F70009D1FF /* Info.plist */,
+				FFCDFC001E0004F70009D1FF /* chuYan.xcdatamodeld */,
+				FFCDFC4E1E00D90B0009D1FF /* OneSDK */,
+				FFCDFBF41E0004F70009D1FF /* Supporting Files */,
+				FFCDFC811E00E0C00009D1FF /* chuYan-Bridging-Header.h */,
+			);
+			path = chuYan;
+			sourceTree = "<group>";
+		};
+		FFCDFBF41E0004F70009D1FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFCDFBF51E0004F70009D1FF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFCDFC101E0004F70009D1FF /* chuYanTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFCDFC111E0004F70009D1FF /* chuYanTests.m */,
+				FFCDFC131E0004F70009D1FF /* Info.plist */,
+			);
+			path = chuYanTests;
+			sourceTree = "<group>";
+		};
+		FFCDFC1B1E0004F70009D1FF /* chuYanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FFCDFC1C1E0004F70009D1FF /* chuYanUITests.m */,
+				FFCDFC1E1E0004F70009D1FF /* Info.plist */,
+			);
+			path = chuYanUITests;
+			sourceTree = "<group>";
+		};
+		FFCDFC4E1E00D90B0009D1FF /* OneSDK */ = {
+			isa = PBXGroup;
+			children = (
+				FFCDFC4F1E00D90B0009D1FF /* ALBBFullSecurityGuard.framework */,
+				FFCDFC501E00D90B0009D1FF /* ALBBMediaService.framework */,
+				FFCDFC511E00D90B0009D1FF /* ALBBSDK.framework */,
+				FFCDFC521E00D90B0009D1FF /* baichuan.bundle */,
+				FFCDFC531E00D90B0009D1FF /* SecurityGuardSDK.framework */,
+				FFCDFC541E00D90B0009D1FF /* SGMain.framework */,
+				FFCDFC551E00D90B0009D1FF /* UTDID.framework */,
+				FFCDFC561E00D90B0009D1FF /* UTMini.framework */,
+				FFCDFC571E00D90B0009D1FF /* yw_1222.jpg */,
+				FFCDFC581E00D90B0009D1FF /* ZipArchive.framework */,
+			);
+			path = OneSDK;
+			sourceTree = "<group>";
+		};
+		FFCDFC881E00E9DE0009D1FF /* Communcation */ = {
+			isa = PBXGroup;
+			children = (
+				FFCDFC891E00E9DE0009D1FF /* communcat.h */,
+				FFCDFC8A1E00E9DE0009D1FF /* communcat.m */,
+				FFCDFCA51E00E9DE0009D1FF /* NetModel.h */,
+				FFCDFCA61E00E9DE0009D1FF /* NetModel.m */,
+				FFCDFCA71E00E9DE0009D1FF /* UserInfoSaveModel.h */,
+				FFCDFCA81E00E9DE0009D1FF /* UserInfoSaveModel.m */,
+			);
+			path = Communcation;
+			sourceTree = "<group>";
+		};
+		FFCDFCBD1E00F8560009D1FF /* BaiDuMap */ = {
+			isa = PBXGroup;
+			children = (
+				FFCDFCBE1E00F8560009D1FF /* BaiDuMapManager.h */,
+				FFCDFCBF1E00F8560009D1FF /* BaiDuMapManager.m */,
+				FFCDFCC01E00F8560009D1FF /* MapRoaldVController.h */,
+				FFCDFCC11E00F8560009D1FF /* MapRoaldVController.mm */,
+			);
+			name = BaiDuMap;
+			path = "Communcation/百度地图";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFCDFBF01E0004F70009D1FF /* chuYan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFCDFC211E0004F70009D1FF /* Build configuration list for PBXNativeTarget "chuYan" */;
+			buildPhases = (
+				21E600E89CF21FEF38282A3F /* 📦 Check Pods Manifest.lock */,
+				FFCDFBED1E0004F70009D1FF /* Sources */,
+				FFCDFBEE1E0004F70009D1FF /* Frameworks */,
+				FFCDFBEF1E0004F70009D1FF /* Resources */,
+				028D089CDCD16AB23A4FB466 /* 📦 Embed Pods Frameworks */,
+				A0F95774D0EEA21C9907A3B3 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = chuYan;
+			productName = chuYan;
+			productReference = FFCDFBF11E0004F70009D1FF /* chuYan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFCDFC0C1E0004F70009D1FF /* chuYanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFCDFC241E0004F70009D1FF /* Build configuration list for PBXNativeTarget "chuYanTests" */;
+			buildPhases = (
+				FFCDFC091E0004F70009D1FF /* Sources */,
+				FFCDFC0A1E0004F70009D1FF /* Frameworks */,
+				FFCDFC0B1E0004F70009D1FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFCDFC0F1E0004F70009D1FF /* PBXTargetDependency */,
+			);
+			name = chuYanTests;
+			productName = chuYanTests;
+			productReference = FFCDFC0D1E0004F70009D1FF /* chuYanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FFCDFC171E0004F70009D1FF /* chuYanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFCDFC271E0004F70009D1FF /* Build configuration list for PBXNativeTarget "chuYanUITests" */;
+			buildPhases = (
+				FFCDFC141E0004F70009D1FF /* Sources */,
+				FFCDFC151E0004F70009D1FF /* Frameworks */,
+				FFCDFC161E0004F70009D1FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFCDFC1A1E0004F70009D1FF /* PBXTargetDependency */,
+			);
+			name = chuYanUITests;
+			productName = chuYanUITests;
+			productReference = FFCDFC181E0004F70009D1FF /* chuYanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFCDFBE91E0004F70009D1FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = CYT;
+				TargetAttributes = {
+					FFCDFBF01E0004F70009D1FF = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = GA9ME5M65Y;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					FFCDFC0C1E0004F70009D1FF = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = XU4Z32BMCQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FFCDFBF01E0004F70009D1FF;
+					};
+					FFCDFC171E0004F70009D1FF = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = XU4Z32BMCQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FFCDFBF01E0004F70009D1FF;
+					};
+				};
+			};
+			buildConfigurationList = FFCDFBEC1E0004F70009D1FF /* Build configuration list for PBXProject "chuYan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFCDFBE81E0004F70009D1FF;
+			productRefGroup = FFCDFBF21E0004F70009D1FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFCDFBF01E0004F70009D1FF /* chuYan */,
+				FFCDFC0C1E0004F70009D1FF /* chuYanTests */,
+				FFCDFC171E0004F70009D1FF /* chuYanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFCDFBEF1E0004F70009D1FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCDFC071E0004F70009D1FF /* LaunchScreen.storyboard in Resources */,
+				FFCDFC041E0004F70009D1FF /* Assets.xcassets in Resources */,
+				FFCDFC611E00D90B0009D1FF /* yw_1222.jpg in Resources */,
+				FFCDFC5C1E00D90B0009D1FF /* baichuan.bundle in Resources */,
+				FFCDFBFF1E0004F70009D1FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFCDFC0B1E0004F70009D1FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFCDFC161E0004F70009D1FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		028D089CDCD16AB23A4FB466 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-chuYan/Pods-chuYan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21E600E89CF21FEF38282A3F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A0F95774D0EEA21C9907A3B3 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-chuYan/Pods-chuYan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFCDFBED1E0004F70009D1FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCDFBFC1E0004F70009D1FF /* ViewController.m in Sources */,
+				FFCDFBF91E0004F70009D1FF /* AppDelegate.m in Sources */,
+				FFCDFBF61E0004F70009D1FF /* main.m in Sources */,
+				FFCDFCA91E00E9DE0009D1FF /* communcat.m in Sources */,
+				FFCDFCC31E00F8560009D1FF /* MapRoaldVController.mm in Sources */,
+				FFCDFCB51E00E9DE0009D1FF /* UserInfoSaveModel.m in Sources */,
+				FFCDFCB41E00E9DE0009D1FF /* NetModel.m in Sources */,
+				FFCDFC021E0004F70009D1FF /* chuYan.xcdatamodeld in Sources */,
+				FFCDFC861E00E38A0009D1FF /* HomeVController.m in Sources */,
+				FFCDFCC21E00F8560009D1FF /* BaiDuMapManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFCDFC091E0004F70009D1FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCDFC121E0004F70009D1FF /* chuYanTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFCDFC141E0004F70009D1FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCDFC1D1E0004F70009D1FF /* chuYanUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFCDFC0F1E0004F70009D1FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFCDFBF01E0004F70009D1FF /* chuYan */;
+			targetProxy = FFCDFC0E1E0004F70009D1FF /* PBXContainerItemProxy */;
+		};
+		FFCDFC1A1E0004F70009D1FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFCDFBF01E0004F70009D1FF /* chuYan */;
+			targetProxy = FFCDFC191E0004F70009D1FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFCDFBFD1E0004F70009D1FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFCDFBFE1E0004F70009D1FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFCDFC051E0004F70009D1FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFCDFC061E0004F70009D1FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFCDFC1F1E0004F70009D1FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FFCDFC201E0004F70009D1FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFCDFC221E0004F70009D1FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE66D93AE27AFCC21327CE6B /* Pods-chuYan.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = GA9ME5M65Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/chuYan/OneSDK",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/BaiduMapKit\"",
+					"\"${PODS_ROOT}/Headers/Public/JPush\"",
+					"\"${PODS_ROOT}/Headers/Public/UMengAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/UMengSocialCOM\"",
+				);
+				INFOPLIST_FILE = chuYan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PODS_ROOT)/UMengAnalytics/**\"",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_5.2.1/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI/",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Wechat/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/AlipayShare/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/SinaSSO/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Line/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Whatsapp/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Instagram/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Tumblr/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/LaiWang/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Twitter/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Facebook/**",
+					"$(inherited)",
+					"\"${PODS_ROOT}/JPush/lib\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HS.HSApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "chuYan/chuYan-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FFCDFC231E0004F70009D1FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B4E1A254304F683BAF6110E /* Pods-chuYan.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = GA9ME5M65Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/chuYan/OneSDK",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/BaiduMapKit\"",
+					"\"${PODS_ROOT}/Headers/Public/JPush\"",
+					"\"${PODS_ROOT}/Headers/Public/UMengAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/UMengSocialCOM\"",
+				);
+				INFOPLIST_FILE = chuYan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PODS_ROOT)/UMengAnalytics/**\"",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_5.2.1/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI/",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Wechat/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/AlipayShare/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/SinaSSO/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Line/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Whatsapp/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Instagram/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Tumblr/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/LaiWang/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Twitter/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Facebook/**",
+					"$(inherited)",
+					"\"${PODS_ROOT}/JPush/lib\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HS.HSApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "chuYan/chuYan-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FFCDFC251E0004F70009D1FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XU4Z32BMCQ;
+				INFOPLIST_FILE = chuYanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChuYanKeJi.www.chuYanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chuYan.app/chuYan";
+			};
+			name = Debug;
+		};
+		FFCDFC261E0004F70009D1FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XU4Z32BMCQ;
+				INFOPLIST_FILE = chuYanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChuYanKeJi.www.chuYanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chuYan.app/chuYan";
+			};
+			name = Release;
+		};
+		FFCDFC281E0004F70009D1FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = XU4Z32BMCQ;
+				INFOPLIST_FILE = chuYanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChuYanKeJi.www.chuYanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = chuYan;
+			};
+			name = Debug;
+		};
+		FFCDFC291E0004F70009D1FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = XU4Z32BMCQ;
+				INFOPLIST_FILE = chuYanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChuYanKeJi.www.chuYanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = chuYan;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFCDFBEC1E0004F70009D1FF /* Build configuration list for PBXProject "chuYan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFCDFC1F1E0004F70009D1FF /* Debug */,
+				FFCDFC201E0004F70009D1FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFCDFC211E0004F70009D1FF /* Build configuration list for PBXNativeTarget "chuYan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFCDFC221E0004F70009D1FF /* Debug */,
+				FFCDFC231E0004F70009D1FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFCDFC241E0004F70009D1FF /* Build configuration list for PBXNativeTarget "chuYanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFCDFC251E0004F70009D1FF /* Debug */,
+				FFCDFC261E0004F70009D1FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFCDFC271E0004F70009D1FF /* Build configuration list for PBXNativeTarget "chuYanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFCDFC281E0004F70009D1FF /* Debug */,
+				FFCDFC291E0004F70009D1FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FFCDFC001E0004F70009D1FF /* chuYan.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FFCDFC011E0004F70009D1FF /* chuYan.xcdatamodel */,
+			);
+			currentVersion = FFCDFC011E0004F70009D1FF /* chuYan.xcdatamodel */;
+			path = chuYan.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FFCDFBE91E0004F70009D1FF /* Project object */;
+}
